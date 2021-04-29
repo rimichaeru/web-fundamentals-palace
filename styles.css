@@ -1,0 +1,87 @@
+/* Asterisk is EVERYTHING - lowest specificity */
+* {
+   padding: 0;
+   margin: 0;
+}
+
+/* 
+box-sizing: content-box -> width+padding+margin+border BY DEFAULT (means that width is not included in max sizing, it is its own measure)
+with border-box instead, width = width+padding+margin+border (the entire element's width is specified by width, then is relatively spread through padding margin and border)
+*/
+
+/* 
+#id
+.classes 
+embedded = body > p 
+{property: value}
+*/
+
+body {
+   font-family: sans-serif;
+   /* Setting the limit to how far this page can spread */
+   max-width: 1400px;
+   /* Then auto-centre it */
+   margin: auto;
+}
+
+header {
+   text-align: center;
+   /* Setting a fixed height */
+   padding: 40px;
+   color: rgb(94, 92, 89);
+}
+
+header > h1 {
+   font-size: 40px;
+}
+
+.card {
+   /* Height generally set to auto by default */
+   width: 300px;
+   border: 5px solid grey;
+   border-radius: 5px;
+   text-align: center;
+   /* Hex code / predefined colour */
+   background-color: #eee;
+   color: midnightblue;
+   padding: 18px;
+   /* 0 to 1 */
+   opacity: 0.618;
+}
+
+
+/* Cropping image overflow 
+use a container first for the image
+
+.card div {
+   min-height: 300px;
+   overflow: hidden;
+}
+
+*/
+
+.card:hover {
+   opacity: 1;
+}
+
+.card img {
+   margin: 10px;
+   width: 200px;
+   border-radius: 5px;
+}
+
+
+/* Chain elements together with , */
+h2, h3, h4, h5, h6 {
+   text-decoration: underline;
+   font-size: 30px;
+}
+
+
+#shashi-list {
+   list-style-type: none;
+}
+
+a, a:active, a:visited {
+   color: brown;
+}
