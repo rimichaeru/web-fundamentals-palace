@@ -36,10 +36,6 @@ header > h1 {
    font-size: 40px;
 }
 
-section {
-   margin-bottom: 0px;
-}
-
 #king-queen {
    display: flex;
    justify-content: center;
@@ -60,7 +56,6 @@ section {
 .line-sec {
    display: flex;
    justify-content: space-evenly;
-   height: 100px;
 }
 
 
@@ -70,7 +65,8 @@ section {
 
 .line {
    height: 100px;
-   border-left: 2px solid grey;
+   width: 2px;
+   background-color: grey;
 }
 
 .card {
