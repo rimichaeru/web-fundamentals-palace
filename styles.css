@@ -90,6 +90,8 @@ section {
 footer {
    display: flex;
    justify-content: center;
+   align-items: center;
+   height: 80px;
 }
 
 /* Cropping image overflow 
